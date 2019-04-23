@@ -1,0 +1,14 @@
+$ javac ./*.java
+$ rmic powerimpl
+$ rmiregistry
+
+
+
+$ java Server
+
+
+$ java client
+Now Enter the numbers: 
+8 2
+Power of Number is 64
+

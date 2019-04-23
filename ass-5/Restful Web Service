@@ -1,0 +1,22 @@
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public String getJson() {
+        //TODO return proper representation object
+        throw new UnsupportedOperationException();
+    }
+    
+    @GET
+    @Path("/concat/{x}/{y}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String concat(@PathParam("x") String x, @PathParam("y") String y) {
+        
+        return x.concat(y);
+    }
+    
+    @GET
+    @Path("/substr/{x}/{y}/{z}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String concat(@PathParam("x") String x, @PathParam("y") int y, @PathParam("z") int z) {
+        
+        return x.substring(y,z);
+    }
